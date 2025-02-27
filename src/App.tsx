@@ -1,6 +1,7 @@
 import './App.css'
 import {Button} from "./components/Button.tsx";
 import {useState} from "react";
+import {Money} from "./components/Money.tsx";
 
 function App() {
 
@@ -26,10 +27,11 @@ function App() {
         <>
             <Button name={'MyButton'} callback={()=>Button1Foo('Vasya',21,'Moscow')}/>
             <Button name={'MyButton2'} callback={()=>Button2Foo('Ivan')}/>
-            <Button name={'StuperButton'} callback={()=>Button2Foo('Im stuped Button')}/>
+            <Button name={'StupedButton'} callback={()=>Button2Foo('Im stuped Button')}/>
             <h1>{a}</h1>
             <button onClick={onClickHandler}>+</button>
             <button onClick={onClickHandler2}>0</button>
+            <Money/>
         </>
     )
 }
