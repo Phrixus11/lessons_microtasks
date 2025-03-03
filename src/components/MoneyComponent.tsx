@@ -18,8 +18,8 @@ export const MoneyComponent = ({currentMoney, foo}: MoneyComponentProps) => {
                 {currentMoney.map((money, i) => (
                     <li key={i}>
                         <span>{money.banknots}</span>
-                        <span>{money.value}</span>
-                        <span>{money.number}</span>
+                        <span> {money.value}</span>
+                        <span> {money.number}</span>
                     </li>
                 ))}
             </ul>
