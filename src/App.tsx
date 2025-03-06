@@ -1,5 +1,5 @@
 import './App.css'
-import {UniversalInput} from "./2.Lesson_input/UniversalInput.tsx";
+import {DeleteTask} from "./HomeWork/HomeWork_2/DeleteTask.tsx";
 
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
         <>
             {/*<UniversalButton/>*/}
             {/*<RenderTasts/> */}
-            <UniversalInput/>
+            {/*<UniversalInput/>*/}
+            <DeleteTask/>
         </>
 
     )}
