@@ -39,40 +39,18 @@ export function DeleteTask() {
         setTasks(filteredTasks);
     }
 
-    const [filter, setFilter] = useState<FilterValuesType>("all");
-
-    let tasksForTodolist = tasks;
-
-    if (filter === "active") {
-        tasksForTodolist = tasks.filter(t => !t.isDone);
-    }
-    if (filter === "completed") {
-        tasksForTodolist = tasks.filter(t => t.isDone);
-    }
-    if (filter === "deleteAll") {
-        tasksForTodolist = tasks.filter( () => false)
-        setTasks(tasksForTodolist)
-
-        // const filteredTasks = tasks.filter(t => t.id != t.id);
-        // setTasks(filteredTasks);
-        setFilter("all")
-
-
-    }
-    if (filter === "show3tasks") {
-        tasksForTodolist = tasks.filter((_,index)=> index <3)
+    function deleteAllTask() {
+        setTasks((prevState) => prevState.filter( () => false))
     }
 
-    function changeFilter(value: FilterValuesType) {
-       setFilter(value);
-    }
 
     return (
         <div className="App">
             <Todolist title="What to learn"
-                      tasks={tasksForTodolist}
+                      tasks={tasks}
                       removeTask={removeTask}
-                      changeFilter={changeFilter}/>
+                      deleteAllTask={deleteAllTask}
+                      />
         </div>
     );
 }
