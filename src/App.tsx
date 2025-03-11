@@ -1,5 +1,7 @@
 import './App.css'
 import OnOff from "./kabzda/OnOff/OnOff.tsx";
+import {ControlledAccordion} from "./kabzda/ControllerAccordion/ControlledAccordion.tsx";
+
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
             {/*<UniversalInput/>*/}
             {/*<DeleteTask/>*/}
             <OnOff />
+            <ControlledAccordion/>
+            <ControlledAccordion/>
         </>
 
     )}
