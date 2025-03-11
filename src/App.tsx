@@ -1,5 +1,5 @@
 import './App.css'
-import {DeleteTask} from "./HomeWork/HomeWork_2/DeleteTask.tsx";
+import OnOff from "./kabzda/OnOff/OnOff.tsx";
 
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
             {/*<UniversalButton/>*/}
             {/*<RenderTasts/> */}
             {/*<UniversalInput/>*/}
-            <DeleteTask/>
+            {/*<DeleteTask/>*/}
+            <OnOff />
         </>
 
     )}
