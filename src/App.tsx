@@ -1,6 +1,7 @@
 import './App.css'
 import OnOff from "./kabzda/OnOff/OnOff.tsx";
-import {ControlledAccordion} from "./kabzda/ControllerAccordion/ControlledAccordion.tsx";
+import {ControlledAccordion} from "./kabzda/ControlledAccordion/ControlledAccordion.tsx";
+import {ControlledRating} from "./kabzda/ControlledRating/ControlledRating.tsx";
 
 
 
@@ -14,6 +15,7 @@ function App() {
             <OnOff />
             <ControlledAccordion/>
             <ControlledAccordion/>
+            <ControlledRating/>
         </>
 
     )}
