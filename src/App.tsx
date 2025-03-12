@@ -7,7 +7,7 @@ import {ControlledRating} from "./kabzda/ControlledRating/ControlledRating.tsx";
 
 function App() {
     return (
-        <>
+        <div className={"app"}>
             {/*<UniversalButton/>*/}
             {/*<RenderTasts/> */}
             {/*<UniversalInput/>*/}
@@ -16,7 +16,7 @@ function App() {
             <ControlledAccordion/>
             <ControlledAccordion/>
             <ControlledRating/>
-        </>
+        </div>
 
     )}
 

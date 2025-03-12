@@ -2,12 +2,12 @@ import {useState} from "react";
 
 
 export const ControlledAccordion = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     return (
         <div>
-            <h2>Menu List</h2>
-            <button onClick={()=>setCollapsed((prev)=>!prev)}>button</button>
+            <h2 style={{cursor: "pointer"}} onClick={()=>setCollapsed((prev)=>!prev)}>Menu List</h2>
+            {/*<button onClick={()=>setCollapsed((prev)=>!prev)}>TOGGLE</button>*/}
             {collapsed && <AccordionBody/>}
         </div>
     );

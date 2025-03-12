@@ -7,22 +7,24 @@ export const ControlledRating = () => {
 
     return (
         <div>
-            <h2>Rating Movie</h2>
-            <Star selected={rating > 0}/><button onClick={()=>setRating(1)}>1</button>
-            <Star selected={rating > 1}/><button onClick={()=>setRating(2)}>2</button>
-            <Star selected={rating > 2}/><button onClick={()=>setRating(3)}>3</button>
-            <Star selected={rating > 3}/><button onClick={()=>setRating(4)}>4</button>
-            <Star selected={rating > 4}/><button onClick={()=>setRating(5)}>5</button>
+            <h2>Rating</h2>
+            <Star selected={rating > 0} setRating={()=>setRating(1)}/>
+            <Star selected={rating > 1} setRating={()=>setRating(2)}/>
+            <Star selected={rating > 2} setRating={()=>setRating(3)}/>
+            <Star selected={rating > 3} setRating={()=>setRating(4)}/>
+            <Star selected={rating > 4} setRating={()=>setRating(5)}/>
         </div>
     );
 };
 
 type StarProps = {
     selected: boolean
+    setRating: () => void
 }
 
-function Star({selected}: StarProps) {
+function Star({selected, setRating}: StarProps) {
 
-    return selected ? <span><b>Star </b></span> : <span>Star </span>
+    return selected ? <span style={{cursor: "pointer"}} onClick={setRating}><b>Star </b></span> :
+        <span style={{cursor: "pointer"}} onClick={setRating}>Star </span>
 
 }

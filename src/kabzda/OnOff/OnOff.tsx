@@ -15,6 +15,7 @@ function OnOff () {
         display: "inline-block",
         padding: "2px",
         backgroundColor: on ? "green" : "white",
+        cursor: "pointer",
     }
     const offStyle = {
         width: "30px",
@@ -24,6 +25,7 @@ function OnOff () {
         marginLeft: "5px",
         padding: "2px",
         backgroundColor: !on ? "red" : "white",
+        cursor: "pointer",
     }
     const indicatorStyle = {
         width: "10px",
