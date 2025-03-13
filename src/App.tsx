@@ -1,7 +1,6 @@
 import './App.css'
-import OnOff from "./kabzda/OnOff/OnOff.tsx";
-import {ControlledAccordion} from "./kabzda/ControlledAccordion/ControlledAccordion.tsx";
-import {ControlledRating} from "./kabzda/ControlledRating/ControlledRating.tsx";
+import App_dop1 from "./3.Lesson_dop1_button/App_dop1.tsx";
+
 
 
 
@@ -12,10 +11,12 @@ function App() {
             {/*<RenderTasts/> */}
             {/*<UniversalInput/>*/}
             {/*<DeleteTask/>*/}
-            <OnOff />
-            <ControlledAccordion/>
-            <ControlledAccordion/>
-            <ControlledRating/>
+            {/*<OnOff />*/}
+            {/*<ControlledAccordion/>*/}
+            {/*<ControlledAccordion/>*/}
+            {/*<ControlledRating/>*/}
+            {/*<AppHomeWork_3/>*/}
+            <App_dop1/>
         </div>
 
     )}
