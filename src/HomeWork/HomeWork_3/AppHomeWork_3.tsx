@@ -60,17 +60,17 @@ function AppHomeWork_3() {
     ]);
 
     function removeTask(id: string) {
-        let filteredTasks = tasks.filter(t => t.id != id);
+        const filteredTasks = tasks.filter(t => t.id != id);
         setTasks(filteredTasks);
     }
 
     function addTask(title: string) {
-        let task = { id: v1(), title: title, isDone: false };
-        let newTasks = [task, ...tasks];
+        const task = { id: v1(), title: title, isDone: false };
+        const newTasks = [task, ...tasks];
         setTasks(newTasks);
     }
 
-    let [filter, setFilter] = useState<FilterValuesType>("all");
+    const [filter, setFilter] = useState<FilterValuesType>("all");
 
     let tasksForTodolist = tasks;
 

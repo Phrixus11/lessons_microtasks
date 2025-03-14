@@ -1,4 +1,4 @@
-import {ChangeEvent, KeyboardEvent, useState} from 'react';
+import {useRef} from 'react';
 import {FilterValuesType} from './AppHomeWork_3.tsx';
 
 type TaskType = {
@@ -17,23 +17,36 @@ type PropsType = {
 
 export function Todolist(props: PropsType) {
 
-    const [title, setTitle] = useState("")
+    const onChangeRef = useRef<HTMLInputElement>(null)
 
     const addTask = () => {
-        props.addTask(title);
-        setTitle("");
-    }
-
-    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setTitle(e.currentTarget.value)
-    }
-
-
-    const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            addTask();
+        if (onChangeRef.current) {
+            props.addTask(onChangeRef.current.value);
+            onChangeRef.current.value= ''
         }
+
     }
+
+
+    //const [title, setTitle] = useState("")
+
+
+
+    //const addTask = () => {
+    //props.addTask(title);
+    //setTitle("");
+    //}
+
+    // const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    //     setTitle(e.currentTarget.value)
+    // }
+
+
+    //const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+    //  if (e.key === 'Enter') {
+    //      addTask();
+    //     }
+    // }
 
     const onAllClickHandler = () => props.changeFilter("all");
     const onActiveClickHandler = () => props.changeFilter("active");
@@ -42,9 +55,13 @@ export function Todolist(props: PropsType) {
     return <div>
         <h3>{props.title}</h3>
         <div>
-            <input value={title}
-                   onChange={onChangeHandler}
-                   onKeyPress={onKeyPressHandler}
+            <input
+                //value={title}
+                //onChange={onChangeHandler}
+                //onKeyPress={onKeyPressHandler}
+
+                ref={onChangeRef}
+
             />
             <button onClick={addTask}>+</button>
         </div>
@@ -69,21 +86,6 @@ export function Todolist(props: PropsType) {
         </div>
     </div>
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //----------------------------------------------------------------------------------
