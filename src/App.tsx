@@ -1,5 +1,5 @@
 import './App.css'
-import App_dop1 from "./3.Lesson_dop1_button/App_dop1.tsx";
+import App_dop2 from "./4.Lessons_dop2_children/App_dop2.tsx";
 
 
 
@@ -16,7 +16,8 @@ function App() {
             {/*<ControlledAccordion/>*/}
             {/*<ControlledRating/>*/}
             {/*<AppHomeWork_3/>*/}
-            <App_dop1/>
+            {/*<App_dop1/>*/}
+            <App_dop2/>
         </div>
 
     )}
