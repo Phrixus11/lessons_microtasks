@@ -89,14 +89,28 @@ function AppHomeWork_3() {
 
     return (
         <div className="App">
+
+            {/*<Todolist title="What to learn"*/}
+            {/*          tasks={tasksForTodolist}*/}
+            {/*          removeTask={removeTask}*/}
+            {/*          changeFilter={changeFilter}*/}
+            {/*          addTask={addTask} />*/}
+
             <Todolist title="What to learn"
                       tasks={tasksForTodolist}
                       removeTask={removeTask}
                       changeFilter={changeFilter}
-                      addTask={addTask} />
+                      addTask={addTask}>
+                <div>
+                    <div>Many intresting information</div>
+                </div>
+            </Todolist>
+
+
+
         </div>
-    );
-}
+
+    )}
 
 export default AppHomeWork_3;
 

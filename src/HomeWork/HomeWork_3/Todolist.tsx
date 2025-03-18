@@ -1,5 +1,6 @@
-import {useRef} from 'react';
+import {ReactNode, useEffect, useRef} from 'react';
 import {FilterValuesType} from './AppHomeWork_3.tsx';
+import autoAnimate from '@formkit/auto-animate'
 
 type TaskType = {
     id: string
@@ -13,9 +14,16 @@ type PropsType = {
     removeTask: (taskId: string) => void
     changeFilter: (value: FilterValuesType) => void
     addTask: (title: string) => void
+    children?:ReactNode
 }
 
 export function Todolist(props: PropsType) {
+    const listRef = useRef(null)
+
+    useEffect(() => {
+        if(listRef.current) autoAnimate(listRef.current)
+    }, [listRef])
+
 
     const onChangeRef = useRef<HTMLInputElement>(null)
 
@@ -65,7 +73,7 @@ export function Todolist(props: PropsType) {
             />
             <button onClick={addTask}>+</button>
         </div>
-        <ul>
+        <ul ref={listRef}>
             {
                 props.tasks.map(t => {
 
@@ -84,6 +92,7 @@ export function Todolist(props: PropsType) {
             <button onClick={onActiveClickHandler}>Active</button>
             <button onClick={onCompletedClickHandler}>Completed</button>
         </div>
+        <div>{props.children}</div>
     </div>
 }
 
