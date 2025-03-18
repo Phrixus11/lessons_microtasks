@@ -1,5 +1,6 @@
 import './App.css'
-import AppHomeWork_3 from "./HomeWork/HomeWork_3/AppHomeWork_3.tsx";
+import App_ATM from "./5.Dop3_ATM/App_ATM.tsx";
+
 
 
 
@@ -17,7 +18,9 @@ function App() {
             {/*<ControlledRating/>*/}
             {/*<App_dop1/>*/}
             {/*<App_dop2/>*/}
-            <AppHomeWork_3/>
+            {/*<AppHomeWork_3/>*/}
+            <App_ATM/>
+
         </div>
 
     )}
