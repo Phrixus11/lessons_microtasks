@@ -1,5 +1,5 @@
 import './App.css'
-import AppHomeWork_3_DOP from "./HomeWork/HomeWork_3_dop/AppHomeWork_3_DOP.tsx";
+import {ControlledRating} from "./kabzda/ControlledRating/ControlledRating.tsx";
 
 
 
@@ -13,14 +13,14 @@ function App() {
             {/*<UniversalInput/>*/}
             {/*<DeleteTask/>*/}
             {/*<OnOff />*/}
+
             {/*<ControlledAccordion/>*/}
-            {/*<ControlledAccordion/>*/}
-            {/*<ControlledRating/>*/}
+            <ControlledRating/>
             {/*<App_dop1/>*/}
             {/*<App_dop2/>*/}
             {/*<AppHomeWork_3/>*/}
             {/*<App_ATM/>*/}
-            <AppHomeWork_3_DOP/>
+            {/*<AppHomeWork_3_DOP/>*/}
 
         </div>
 
