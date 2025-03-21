@@ -1,5 +1,5 @@
 import './App.css'
-import {ControlledRating} from "./kabzda/ControlledRating/ControlledRating.tsx";
+import App_ps4 from "./HomeWork/HomeWork_4/App_ps4.tsx";
 
 
 
@@ -13,14 +13,14 @@ function App() {
             {/*<UniversalInput/>*/}
             {/*<DeleteTask/>*/}
             {/*<OnOff />*/}
-
             {/*<ControlledAccordion/>*/}
-            <ControlledRating/>
+            {/*<ControlledRating/>*/}
             {/*<App_dop1/>*/}
             {/*<App_dop2/>*/}
             {/*<AppHomeWork_3/>*/}
             {/*<App_ATM/>*/}
             {/*<AppHomeWork_3_DOP/>*/}
+            <App_ps4/>
 
         </div>
 
