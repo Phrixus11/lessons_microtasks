@@ -1,12 +1,14 @@
 import {useState} from "react";
 
+type OnOffPropsType = {
+    defaultOn?: boolean
+}
+
+export function OnOff (props: OnOffPropsType) {
 
 
-function OnOff () {
 
-
-
-    const [on, setOn] = useState(false)
+    const [on, setOn] = useState<boolean>(props.defaultOn || false)
 
     const onStyle = {
         width: "30px",
@@ -42,5 +44,3 @@ function OnOff () {
         <div style={indicatorStyle}></div>
     </div>
 }
-
-export default OnOff

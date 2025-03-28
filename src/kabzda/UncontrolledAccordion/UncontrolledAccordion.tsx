@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 
-export const ControlledAccordion = () => {
+export const UncontrolledAccordion = () => {
     const [collapsed, setCollapsed] = useState(true);
 
     return (
