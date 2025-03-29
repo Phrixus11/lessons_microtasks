@@ -1,5 +1,5 @@
 import './App.css'
-import App_ps5 from "./HomeWork/HomeWork_5/App_ps5.tsx";
+import App_Tuesday_DOP_1 from "./6.Tuesday_DOP_1/App_Tuesday_DOP_1.tsx";
 
 
 
@@ -22,8 +22,10 @@ function App() {
             {/*<App_ATM/>*/}
             {/*<AppHomeWork_3_DOP/>*/}
             {/*<App_ps4/>*/}
-            <App_ps5/>
+            {/*<App_ps5/>*/}
+            <App_Tuesday_DOP_1/>
         </div>
+
 
     )}
 

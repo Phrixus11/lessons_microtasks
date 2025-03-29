@@ -23,7 +23,7 @@ type SuperButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export const SuperButton = (props: SuperButtonProps) => {
 
-    const {onClick, color, title, children, className, disabled, ...restProps} = props
+    const {color, children, disabled} = props
 
     // const finalClassName =
     //     styles.button +
