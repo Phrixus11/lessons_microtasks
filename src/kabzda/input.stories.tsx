@@ -1,10 +1,11 @@
 import {ChangeEvent, useRef, useState} from "react";
 // import {action} from "@storybook/addon-actions";
 
-export default {
-    title: 'input',
-    // component: input,
+
+const meta = {
+    component: "UncontrolledInput",
 }
+export default meta
 
 
 // export const Primary: Story = {
