@@ -1,4 +1,5 @@
 import {ChangeEvent, useRef, useState} from "react";
+// import {action} from "@storybook/addon-actions";
 
 export default {
     title: 'input',
@@ -19,7 +20,7 @@ export const UncontrolledInput = () => {
 }
 export const TrackValueOfUncontrolledInput = () => {
     const [value, setValue] = useState<string>('')
-    const onChangeHandler = (e:ChangeEvent<HTMLInputElement>) => {
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.currentTarget.value)
     }
     return <>
@@ -37,7 +38,7 @@ export const GetValueOfUncontrolledInputByButtonPress = () => {
         setValue(element.value)
     }
     return <>
-        <input ref={inputRef} />
+        <input ref={inputRef}/>
         <button onClick={() => {
             //способ из нативки нарушающий принципы Реакта
             // const el = document.getElementById('input') as HTMLInputElement
@@ -51,6 +52,32 @@ export const GetValueOfUncontrolledInputByButtonPress = () => {
     </>
 }
 
-export const СontrolledInputWithFixedValue = () => {
+export const ControlledInput = () => {
+    const [parentValue, setParentValue] = useState<string>('')
+    return <input type="text" value={parentValue} onChange={(e) => setParentValue(e.currentTarget.value)}/>
+}
+
+
+export const ControlledCheckbox = () => {
+    const [parentValue, setParentValue] = useState<boolean>(true)
+    return <input type="checkbox" checked={parentValue} onChange={(e) => setParentValue(e.currentTarget.checked)}/>
+}
+
+
+export const ControlledSelect = () => {
+    const [parentValue, setParentValue] = useState<string | undefined>("2")
+    const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
+        setParentValue(e.currentTarget.value)
+    }
+    return <select value={parentValue} onChange={onChangeHandler}>
+        <option>none</option>
+        <option value="1">Minsk</option>
+        <option value="2">Moscow</option>
+        <option value="3">Kiev</option>
+    </select>
+}
+
+
+export const ControlledInputWithFixedValue = () => {
     return <input value={'it-incubator'}/>
 }
