@@ -32,3 +32,8 @@
 .selectItem:hover {
     color: #3d6fe4;
 }
+
+.selectItem.selected {
+    background-color: blue;
+    color: white;
+}

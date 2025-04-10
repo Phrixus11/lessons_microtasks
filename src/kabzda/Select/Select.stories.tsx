@@ -34,16 +34,13 @@ export const CustomSelect = () => {
         setValue(value);
     }
 
-    const selectedItem = items.find(item => item.value === value);
-    const selectValue = selectedItem ? selectedItem.title : 'choose';
-
     // let selectValue: string = '';
     // if (value === 0) selectValue = 'choose';
     // if (value === 1) selectValue = 'Dimych';
     // if (value === 2) selectValue = 'Yura';
     // if (value === 3) selectValue = 'Vova';
     // if (value === 4) selectValue = 'Ignat';
-    return <Select value={selectValue}
+    return <Select value={value}
                    onChange={onChange}
                    items={items}/>
 }
