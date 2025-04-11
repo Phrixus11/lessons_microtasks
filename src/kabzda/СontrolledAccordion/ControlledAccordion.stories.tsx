@@ -11,7 +11,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const setRatingHandler = action("setRating");
+const setRatingHandler = action("setCollapsed");
 const onClickCallback = action("some item was clicked");
 
 export const Default: Story = {

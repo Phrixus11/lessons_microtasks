@@ -1,4 +1,12 @@
 {
+  "compilerOptions": {
+    "module": "ESNext",  // или ES2020, ES2022, node16, nodenext
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
