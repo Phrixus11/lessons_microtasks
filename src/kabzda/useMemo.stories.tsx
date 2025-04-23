@@ -13,7 +13,7 @@ export const ExampleUseMemo = () => {
     let resultY = y
 
     resultX = useMemo(()=>{
-        let temp = 1
+        let temp = x
         for (let i = 1; i < 1000000000; i++) {
             temp += 1
         }
@@ -22,9 +22,12 @@ export const ExampleUseMemo = () => {
     },[x])
 
 
-    for (let i = 1; i < 5; i++) {
-        resultY += 1
+    function foo() {
+        for (let i = 1; i < 5; i++) {
+            resultY += 1
+        }
     }
+    foo()
 
     return (
         <div>
@@ -73,5 +76,4 @@ export const UseMemoAndReactMemo = () => {
                 <MemoUsersList users={filterUsers} />
             </div>
         )
-
 }
