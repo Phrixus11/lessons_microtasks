@@ -1,6 +1,7 @@
 import './App.css'
-import {OnOff} from "./kabzda/OnOff/OnOff.tsx";
-// import App_TUESDAY_DOP_3 from "./8.Tuesday_DOP_3/App_TUESDAY-DOP-3.tsx";
+import {App_reactRouter} from "./9.React-router/App_react-router.tsx";
+import {BrowserRouter} from "react-router-dom";
+
 
 
 
@@ -14,7 +15,7 @@ function App() {
             {/*<RenderTasts/> */}
             {/*<UniversalInput/>*/}
             {/*<DeleteTask/>*/}
-            <OnOff />
+            {/*<OnOff />*/}
             {/*<ControlledAccordion/>*/}
             {/*<ControlledRating/>*/}
             {/*<App_dop1/>*/}
@@ -27,6 +28,10 @@ function App() {
             {/*<App_Tuesday_DOP_1/>*/}
             {/*<App_Tuesday_DOP_2/>*/}
             {/*<App_TUESDAY_DOP_3/>*/}
+            <BrowserRouter>
+                <App_reactRouter/>
+            </BrowserRouter>
+
         </div>
 
 
