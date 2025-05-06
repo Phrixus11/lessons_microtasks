@@ -26,3 +26,5 @@ dist-ssr
 *storybook.log
 
 src/stories
+
+src/kabzda/Api/apiSettings.ts
