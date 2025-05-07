@@ -1,9 +1,10 @@
-import {apiKey} from "./apiSettings";
+import {apiKey, token} from "./apiSettings";
 import axios from "axios";
 
 const settings = {
-  withCredentials: true,
+  // withCredentials: true, // авторизация с помощью куки
   headers: {
+    Authorization: `Bearer ${token}`, // авторизация с помощью токена
     'api-key': apiKey
   }
 }
