@@ -1,8 +1,6 @@
 import './App.css'
-import {Provider} from 'react-redux';
-
-import {App_sprint3_1_2} from "./10.Sprint-3-dop-1/extra-practice-1.2/App_sprint3_1.2.tsx";
-import { store} from "./10.Sprint-3-dop-1/extra-practice-1.2/store";
+import {BrowserRouter} from "react-router-dom";
+import {App_reactRouter} from "./9.React-router/App_react-router";
 
 
 function App() {
@@ -25,15 +23,15 @@ function App() {
             {/*<App_Tuesday_DOP_1/>*/}
             {/*<App_Tuesday_DOP_2/>*/}
             {/*<App_TUESDAY_DOP_3/>*/}
-            {/*<BrowserRouter>*/}
-            {/*    <App_reactRouter/>*/}
-            {/*</BrowserRouter>*/}
+            <BrowserRouter>
+                <App_reactRouter/>
+            </BrowserRouter>
             {/*<Provider store={store}>*/}
             {/*    /!*<App_sprint3_1_1/>*!/*/}
             {/*</Provider>*/}
-            <Provider store={store}>
-                <App_sprint3_1_2/>
-            </Provider>
+            {/*<Provider store={store}>*/}
+            {/*    <App_sprint3_1_2/>*/}
+            {/*</Provider>*/}
 
         </div>
 
