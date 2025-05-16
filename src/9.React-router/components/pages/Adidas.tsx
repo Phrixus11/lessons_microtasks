@@ -1,7 +1,7 @@
-import adidasModel1 from '../../assets/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp';
+import adidasModel1 from '../../assets/Adidas/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp';
 import adidasModel2
-    from '../../assets/PostMove_Mid_Cloudfoam_Super_Lifestyle_Basketball_Mid_Classic_Shoes_Black_GY7163_01_standard.webp';
-import adidasModel3 from '../../assets/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp';
+    from '../../assets/Adidas/PostMove_Mid_Cloudfoam_Super_Lifestyle_Basketball_Mid_Classic_Shoes_Black_GY7163_01_standard.webp';
+import adidasModel3 from '../../assets/Adidas/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp';
 import { Link } from 'react-router-dom';
 
 export type AdidasItem = {
@@ -42,7 +42,7 @@ export const Adidas = () => {
            <h2> ADIDAS</h2>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 {adidasArr.map((adidas) => (
-                    <Link to={`/adidas/model/${adidas.id}`} key={adidas.id} >
+                    <Link to={`/adidas/${adidas.id}`} key={adidas.id} >
                         <img src={adidas.picture} alt={adidas.model}
                              style={{width: '200px', height: 'auto', marginRight: '5px'}}/>
                     </Link>

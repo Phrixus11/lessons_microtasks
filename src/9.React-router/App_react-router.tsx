@@ -12,7 +12,7 @@ const PATH = {
   PAGE2: "/puma",
   PAGE3: "/abibas",
   ERROR404: "/error404",
-  MODEL: '/adidas/model/:id'
+  MODEL: '/:model/:id'
 } as const;
 
 export const App_reactRouter = () => {
