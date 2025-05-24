@@ -1,5 +1,6 @@
 import './App.css'
-import {App_sprint3_dop2_3} from "./11.Sprint-3-dop-2/extra-practice-2.3/App";
+import {BrowserRouter} from "react-router-dom";
+import {App_reactRouter} from './9.React-router/App_react-router';
 
 
 function App() {
@@ -22,9 +23,9 @@ function App() {
         {/*<App_Tuesday_DOP_2/>*/}
         {/*<App_TUESDAY_DOP_3/>*/}
 
-        {/*<BrowserRouter>*/}
-        {/*    <App_reactRouter/>*/}
-        {/*</BrowserRouter>*/}
+        <BrowserRouter>
+            <App_reactRouter/>
+        </BrowserRouter>
 
         {/*<Provider store={store}>*/}
         {/*    /!*<App_sprint3_1_1/>*!/*/}
@@ -34,7 +35,7 @@ function App() {
         {/*</Provider>*/}
         {/*<App_sprint3_dop2/>*/}
         {/*<App_sprint3_dop2_2/>*/}
-        <App_sprint3_dop2_3/>
+        {/*<App_sprint3_dop2_3/>*/}
 
 
       </div>
