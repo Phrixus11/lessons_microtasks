@@ -19,7 +19,7 @@ const PATH = {
 } as const;
 
 //Declarative Mode
-export const App_reactRouter = () => {
+export const App_reactRouter_Declarative_mode = () => {
   return (
       <div>
         <div className={styles.header}><h1>HEADER</h1></div>

@@ -1,6 +1,6 @@
 import './App.css'
-import {BrowserRouter} from "react-router-dom";
-import {App_reactRouter} from './9.React-router/App_react-router';
+import {RouterProvider} from "react-router-dom";
+import {router} from "./9.React-router/routes/router";
 
 
 function App() {
@@ -23,9 +23,11 @@ function App() {
         {/*<App_Tuesday_DOP_2/>*/}
         {/*<App_TUESDAY_DOP_3/>*/}
 
-        <BrowserRouter>
-            <App_reactRouter/>
-        </BrowserRouter>
+        {/*<BrowserRouter>*/}
+        {/*    <App_reactRouter_Declarative_mode/>*/}
+        {/*</BrowserRouter>*/}
+
+        <RouterProvider router={router} />
 
         {/*<Provider store={store}>*/}
         {/*    /!*<App_sprint3_1_1/>*!/*/}
